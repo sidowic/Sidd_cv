@@ -1,0 +1,248 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Ayushi}{Nayak}{ \urlstyle{same}\href{http://ayushinayak.in}{ayushinayak.com} | \href{mailto:hi@ayushinayak.in}{hi@ayushinayak.in} | (+353) 0899 879 258 | \href{mailto:d19123831@mytudublin.ie}{ayushi.nayak@tudublin.ie}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{TU Dublin}
+\descript{MSc. in Computer Science}
+\location{Jan 2021 | Dublin, IE}
+\sectionsep
+
+\subsection{BIJU PATNAIK UNIVERSITY OF TECHNOLOGY}
+\descript{BTech. in Computer Science and Engineering}
+\location{May 2016 | Bhubaneswar, IN}
+College of Engineering and Technology \\
+\location{ Cum. GPA: 8.27 / 10.0}
+\sectionsep
+
+\subsection{St. John's Senior Secondary School}
+\location{May 2012 |  Kota, IN}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Facebook:// \href{https://www.facebook.com/ayushishradha}{\bf Ayushi Nayak} \\
+Github:// \href{https://github.com/AyyNayak}{\bf Ayushi Nayak} \\
+LinkedIn://  \href{https://www.linkedin.com/in/ayushinayak}{\bf Ayushi Nayak} \\
+YouTube://  \href{https://www.youtube.com/channel/UCyy1Hf36JmKnh4T0i3I430w}{\bf Ayushi Nayak} \\
+Twitter://  \href{https://twitter.com/Ayy_Nay}{\bf Ayushi Nayak} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+% skip system design and machine learning
+Systems Architecture \\
+Secure Systems Development \\
+Web Applications Architecture \\
+{\footnotesize \textit{\textbf{(Research Asst.) }}} \\
+Programming Paradigms \\
+Advanced Databases \\
+Machine Learning \\
+Deep Learning \\
+Working with Data \\
+\sectionsep
+
+\subsection{Undergraduate}
+Compiler Design \\ 
+Theory of Computation  \\
+Design and Analysis of Algorithm \\
+Data Structures \\
+Advanced Computer Architecture \\
+Cryptography and Network Security \\
+Data and Web Mining \\
+Operating System \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Python \textbullet{} Javascript \textbullet{} Jupyter NB \textbullet{} \LaTeX\ \\ 
+\location{Over 1000 lines:}
+C \textbullet{} C++ \textbullet{} C Sharp  \textbullet{} Assembly  \textbullet{} Prolog\\
+\location{Familiar:}
+Go \textbullet{}   Java \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{TATA Consultancy Services Pvt. Ltd.}
+\descript{| Systems Engineer }
+\location{Mar 2017 - Study Sabbatical | Pune, In}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Led and shipped EV infra charging app – the mobile and Windows application for the new report generation system.
+\item Full-stack Developer:  Wrote and reviewed code for Microsoft Z3 & Python using Django and Flask. Fixed UI bugs and upgraded backend to deploy over AWS.
+\item Published research paper: Approach to Predict the Outcome of an EV Charger Getting Certiﬁed.
+\item Received the Special Initiative award within three months of joining and an  On the Spot award from Nissan for quick project delivery.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{National Thermal Power Corp}
+\descript{| Industrial Trainee }
+\location{June 2015 – July 2015 | Mouda, India}
+\begin{tightemize}
+\item Worked on the most widely installed Customer Mailing System, in Python and JavaScript,  alongside Bodhtree.
+\item Wrote a web application using a  Pylons framework to execute the revamped interface to view archives with improved search operations.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Adani Power Maharashtra Ltd.}
+\descript{| Vocational Trainee}
+\location{June 2015 | Tirora, India}
+\begin{tightemize}
+\item IT network systems: learned to install, maintain, and manage networks and IT business systems.
+\item Designed an MVP for the employment platform using C# and ASP .NET to match job providers and seekers, which offered voice interaction.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{School of Computer Science, TU Dublin}
+\descript{| Research Assistant}
+\location{Nov 2019 – Apr 2020 | Dublin, IE}
+Worked with \textbf{\href{https://www.dit.ie/computing/people/academicstaff/staff/staffname161599en.html}{Sarah Jane Delaney}} to create \textbf{{HD-Intelligence}\href{https://hd-intelligence.com/}}, a tool to automate and facilitate the electronic discovery (e-discovery) process, including the identiﬁcation, preserving, collecting, processing, reviewing, analyzing, and producing digital data.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects} 
+\begin{tabular}{rll}
+2020	      & \href{https://github.com/GroupProjectSem3/Haley}{\bf Haley (ongoing)} \\
+2020	     & \href{https://github.com/Yuce-Solutions/People-Counter-On-Edge}{\bf People Counter on Edge} \\
+2020	     & \href{https://github.com/Yuce-Solutions/Smart_queueing_system_on_edge}{\bf Smart Queuing System on Edge} \\
+\end{tabular}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2019 & 60/2500  & Centenary Scholarship Programme for TU Dublin Masters Students\\
+2018 & - & TCS On the Spot award\\
+2017 & - & TCS Special Initiative award\\
+2012 & - & Adani Saraswati Sanman\\
+2010 & 102/1.8 mil  & SSC Merit Scholarship\\
+2008 & 13/10,000 & Vigyan Manthan Lifetime Merit Scholarship \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
